@@ -11,8 +11,8 @@
     <!--指定注解扫描包的路径-->
     <context:component-scan base-package="cn.lytmac.spring.test"/>
 
-    <import resource="spring-config-aop.xml"/>
+    <!--<import resource="spring-config-aop.xml"/>-->
+    <import resource="spring-config-ioc.xml"/>
 
-    <bean id="aopTestTrigger" class="cn.lytmac.spring.test.aop.AopTestTrigger"/>
-    <bean id="baseObject" class="cn.lytmac.spring.test.aop.target.BaseObject"/>
+
 </beans>

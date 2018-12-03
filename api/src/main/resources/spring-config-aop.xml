@@ -7,6 +7,9 @@
         http://www.springframework.org/schema/aop
         http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
 
+    <bean id="aopTestTrigger" class="cn.lytmac.spring.test.aop.AopTestTrigger"/>
+    <bean id="baseObject" class="cn.lytmac.spring.test.aop.target.BaseObject"/>
+
     <bean id="aspect" class="cn.lytmac.spring.test.aop.aspect.IntegratedAspect"/>
 
     <!--proxy-target-class == TRUE : AOP基于继承基类做动态代理 - cglib -->
