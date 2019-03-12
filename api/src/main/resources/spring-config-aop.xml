@@ -19,11 +19,14 @@
 
         <!--pointcut, advisor, aspect 必须按照这个顺序声明-->
 
-        <!--定义切点-->
-        <aop:pointcut id="pointcut" expression="execution(public * cn.lytmac.spring.test.aop.target.*.*(..))"/>
 
-        <!--定义切面-->
+        <!--定义切面：切面由切点和增强组成-->
         <aop:aspect id="aspect" ref="aspect">
+
+            <!--定义切点-->
+            <aop:pointcut id="pointcut" expression="execution(public * cn.lytmac.spring.test.aop.target.*.*(..))"/>
+
+            <!--定义增强-->
             <aop:before method="before" pointcut-ref="pointcut"/>
             <aop:after method="after" pointcut-ref="pointcut"/>
             <aop:around method="around" pointcut-ref="pointcut"/>

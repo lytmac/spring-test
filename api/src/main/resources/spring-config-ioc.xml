@@ -5,6 +5,6 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="fromBean" class="cn.lytmac.spring.test.ioc.FromBean" />
-    <bean id="lazyInitBean" class="cn.lytmac.spring.test.ioc.LazyInitBean" lazy-init="true"/>
+    <bean id="lazyInitBean" class="cn.lytmac.spring.test.ioc.LazyInitBean" />
 
 </beans>

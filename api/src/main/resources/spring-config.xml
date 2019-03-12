@@ -11,7 +11,7 @@
     <!--指定注解扫描包的路径-->
     <context:component-scan base-package="cn.lytmac.spring.test"/>
 
-    <!--<import resource="spring-config-aop.xml"/>-->
+    <import resource="spring-config-aop.xml"/>
     <import resource="spring-config-ioc.xml"/>
 
 
